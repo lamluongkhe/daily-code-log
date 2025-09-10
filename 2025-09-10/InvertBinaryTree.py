@@ -30,8 +30,11 @@ class Solution:
         if root is None:
             return
         else:
+            #Swap 2 values:
             root.left, root.right = root.right, root.left
+            #Move to Left and continue swap
             self.invertTree(root.left)
+            #Move to Right and continue swap
             self.invertTree(root.right)
         
         return root
