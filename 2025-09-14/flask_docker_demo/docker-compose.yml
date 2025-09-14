@@ -1,0 +1,51 @@
+version: "3.9"
+
+services:
+  mysql:
+    image: lamluongkhe/mysql:10.11
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: flask_login_demo
+      MYSQL_USER: kheuser
+      MYSQL_PASSWORD: 123
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - appnet
+
+  web1:
+    image: lamluongkhe/web1:latest
+    container_name: web1
+    depends_on:
+      - mysql
+    networks:
+      - appnet
+
+  web2:
+    image: lamluongkhe/web2:latest
+    container_name: web2
+    depends_on:
+      - mysql
+    networks:
+      - appnet
+
+  haproxy:
+    image: lamluongkhe/haproxy:latest
+    container_name: haproxy
+    ports:
+      - "80:80"
+      - "8404:8404"
+    depends_on:
+      - web1
+      - web2
+    networks:
+      - appnet
+
+volumes:
+  mysql_data:
+
+networks:
+  appnet:
+    driver: bridge
+
