@@ -1,0 +1,28 @@
+# Stage 1: Build (có đủ công cụ biên dịch)
+FROM python:3.11 AS builder
+
+WORKDIR /app
+
+# Copy và cài dependencies vào folder riêng
+COPY requirements.txt .
+RUN pip install --user --no-cache-dir -r requirements.txt
+
+# Copy toàn bộ source code
+COPY . .
+
+# Stage 2: Runtime (nhẹ hơn)
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Copy thư viện đã build từ builder
+COPY --from=builder /root/.local /root/.local
+
+# Đảm bảo Python tìm đúng thư viện
+ENV PATH=/root/.local/bin:$PATH
+
+# Copy code thôi (không cần toolchain)
+COPY templates app.py backendsess.py .
+
+EXPOSE 8080
+CMD ["python", "app.py"]
