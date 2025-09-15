@@ -1,0 +1,22 @@
+# Stage 1: Build
+FROM golang:1.22 AS builder
+RUN useradd -m -s /bin/bash appuser
+
+WORKDIR /app
+
+# Copy go.mod trước để cache dependencies
+COPY go.mod ./
+RUN go mod download
+
+# Copy toàn bộ source
+COPY . .
+
+# Build binary
+RUN CGO_ENABLED=0 GOOS=linux go build -o myapp .
+
+RUN rm -f main.go go.mod Dockerfile Dockerfile.1
+
+USER appuser
+
+EXPOSE 8080
+CMD ["./myapp"]
