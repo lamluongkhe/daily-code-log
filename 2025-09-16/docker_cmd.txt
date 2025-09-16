@@ -1,0 +1,17 @@
+-----------------------------------
+docker pull mysql:8.0
+
+docker run -d   --name mysql   --network bridge   -e MYSQL_ROOT_PASSWORD=root   -e MYSQL_DATABASE=flask_login_demo   -e MYSQL_USER=kheuser   -e MYSQL_PASSWORD=123   -v /home/khe/Desktop/flask_docker_demo/mysql_data:/var/lib/mysql   -p 3306:3306   mysql:8.0
+-----------------------------------
+docker pull haproxy:3.2.4
+
+docker run -d --name haproxy --network bridge -p 8080:80 -p 8404:8404   -v ./haproxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro   haproxy:latest
+------------------------------------
+docker build -t lamluongkhe/web:1.0 .
+
+docker push lamluongkhe/web:0.1
+
+docker pull lamluongkhe/web:0.1	
+
+docker run -d --name web1 --network bridge -p 5000:5000  -e MYSQL_HOST=172.17.0.2 -e MYSQL_USER=kheuser -e MYSQL_PASSWORD=123 -e MYSQL_DATABASE=flask_login_demo web:latest
+
