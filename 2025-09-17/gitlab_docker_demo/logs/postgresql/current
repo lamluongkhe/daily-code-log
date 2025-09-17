@@ -1,0 +1,37 @@
+2025-09-17_15:34:40.14293 LOG:  starting PostgreSQL 16.8 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-09-17_15:34:40.14590 LOG:  listening on Unix socket "/var/opt/gitlab/postgresql/.s.PGSQL.5432"
+2025-09-17_15:34:40.16393 LOG:  database system was shut down at 2025-09-17 15:34:38 GMT
+2025-09-17_15:34:40.17310 LOG:  database system is ready to accept connections
+2025-09-17_15:34:42.89226 LOG:  no match in usermap "gitlab" for user "gitlab" authenticated as "root"
+2025-09-17_15:34:42.89230 FATAL:  Peer authentication failed for user "gitlab"
+2025-09-17_15:34:42.89230 DETAIL:  Connection matched file "/var/opt/gitlab/postgresql/data/pg_hba.conf" line 70: "local   all         all                               peer map=gitlab"
+2025-09-17_15:34:42.98904 LOG:  no match in usermap "gitlab" for user "gitlab" authenticated as "root"
+2025-09-17_15:34:42.98905 FATAL:  Peer authentication failed for user "gitlab"
+2025-09-17_15:34:42.98905 DETAIL:  Connection matched file "/var/opt/gitlab/postgresql/data/pg_hba.conf" line 70: "local   all         all                               peer map=gitlab"
+2025-09-17_15:34:43.09978 LOG:  no match in usermap "gitlab" for user "gitlab" authenticated as "root"
+2025-09-17_15:34:43.09981 FATAL:  Peer authentication failed for user "gitlab"
+2025-09-17_15:34:43.09981 DETAIL:  Connection matched file "/var/opt/gitlab/postgresql/data/pg_hba.conf" line 70: "local   all         all                               peer map=gitlab"
+2025-09-17_15:34:43.85166 LOG:  no match in usermap "gitlab" for user "gitlab" authenticated as "root"
+2025-09-17_15:34:43.85167 FATAL:  Peer authentication failed for user "gitlab"
+2025-09-17_15:34:43.85168 DETAIL:  Connection matched file "/var/opt/gitlab/postgresql/data/pg_hba.conf" line 70: "local   all         all                               peer map=gitlab"
+2025-09-17_15:34:44.12628 LOG:  no match in usermap "gitlab" for user "gitlab" authenticated as "root"
+2025-09-17_15:34:44.12631 FATAL:  Peer authentication failed for user "gitlab"
+2025-09-17_15:34:44.12631 DETAIL:  Connection matched file "/var/opt/gitlab/postgresql/data/pg_hba.conf" line 70: "local   all         all                               peer map=gitlab"
+2025-09-17_15:34:44.55379 LOG:  no match in usermap "gitlab" for user "gitlab" authenticated as "root"
+2025-09-17_15:34:44.55381 FATAL:  Peer authentication failed for user "gitlab"
+2025-09-17_15:34:44.55382 DETAIL:  Connection matched file "/var/opt/gitlab/postgresql/data/pg_hba.conf" line 70: "local   all         all                               peer map=gitlab"
+2025-09-17_15:35:02.79974 ERROR:  relation "feature_gates" does not exist at character 523
+2025-09-17_15:35:02.79975 STATEMENT:  SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+2025-09-17_15:35:02.79975 	       pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+2025-09-17_15:35:02.79976 	       c.collname, col_description(a.attrelid, a.attnum) AS comment,
+2025-09-17_15:35:02.79976 	       attidentity AS identity,
+2025-09-17_15:35:02.79976 	       attgenerated as attgenerated
+2025-09-17_15:35:02.79976 	  FROM pg_attribute a
+2025-09-17_15:35:02.79976 	  LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+2025-09-17_15:35:02.79976 	  LEFT JOIN pg_type t ON a.atttypid = t.oid
+2025-09-17_15:35:02.79977 	  LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+2025-09-17_15:35:02.79977 	 WHERE a.attrelid = '"feature_gates"'::regclass
+2025-09-17_15:35:02.79977 	   AND a.attnum > 0 AND NOT a.attisdropped
+2025-09-17_15:35:02.79977 	 ORDER BY a.attnum
+2025-09-17_15:35:02.79977 	
+2025-09-17_15:35:11.52328 LOG:  duration: 1587.995 ms  statement: COMMIT
