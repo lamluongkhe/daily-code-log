@@ -1,0 +1,6 @@
+sudo umount /dev/sdc1 (sudo umount -l /dev/sdc1)
+
+sudo fdisk /dev/sdc -> gõ o -> chọn n(new) và p(primary) -> xong gõ w để quit
+
+sudo mkfs.ntfs -f /dev/sdc1
+
