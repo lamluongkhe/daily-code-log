@@ -1,0 +1,14 @@
+stages:
+  - test
+
+test_job:
+  stage: test
+  image: alpine:latest   # dùng image Docker đơn giản
+  tags:
+    - gitlab-runer
+  script:
+    - echo "Hello from GitLab Runner!"
+    - echo "Current directory:"
+    - pwd
+    - ls -la
+
