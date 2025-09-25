@@ -1,0 +1,43 @@
+stages:
+  - build
+  - deploy
+
+variables:
+  DOCKER_TLS_CERTDIR: ""
+  
+
+build_app:
+  stage: build
+  image: docker:24.0.5
+  services:
+    - name: docker:24.0.5-dind
+      command: ["--tls=false"]  
+      alias: docker
+    
+  tags:
+    - gitlab-runner
+  before_script:
+    - apk add --no-cache docker-compose
+  script:
+    - cd flask_docker_demo/web/
+    - docker build -f Dockerfile -t lamluongkhe/web:$CI_COMMIT_SHA .
+
+deploy_app:
+  stage: deploy
+  image: docker:24.0.5
+  services:
+    - name: docker:24.0.5-dind
+      command: ["--tls=false"]
+      alias: docker
+  tags:
+    - gitlab-runner
+  before_script:
+    - mkdir -p ~/.ssh
+    - echo "$SSH_KEY" > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - printf "Host *\n  StrictHostKeyChecking no\n  UserKnownHostsFile /dev/null\n" > ~/.ssh/config
+    - chmod 600 ~/.ssh/config
+  script:
+    - ssh khe@192.168.0.10 -p 2222 echo "lamluongkhe/web:$CI_COMMIT_SHA" > /tmp/version.txt 
+  only:
+    - main
