@@ -1,0 +1,65 @@
+
+services:
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: flask_login_demo
+      MYSQL_USER: kheuser
+      MYSQL_PASSWORD: 123
+    ports:
+      - "3306:3306"
+    volumes:
+      - /home/khe/Desktop/flask_docker_demo/mysql_data:/var/lib/mysql
+    network_mode: bridge
+
+
+  redis:
+    image: redis:7.4
+    environment:
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      REDIS_DB: 0
+    ports:
+      - "6379:6379"
+    volumes:
+      - /home/khe/Desktop/flask_docker_demo/redis_data:/data
+    network_mode: bridge
+
+  web1:
+    image: lamluongkhe/web:0.1
+    environment:
+      MYSQL_HOST: 192.168.0.10
+      MYSQL_DATABASE: flask_login_demo
+      MYSQL_USER: kheuser
+      MYSQL_PASSWORD: 123
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mysql
+    network_mode: bridge
+
+  web2:
+    image: lamluongkhe/web:0.1
+    environment:
+      MYSQL_HOST: 192.168.0.10
+      MYSQL_DATABASE: flask_login_demo
+      MYSQL_USER: kheuser
+      MYSQL_PASSWORD: 123
+    ports:
+      - "5001:5000"
+    depends_on:
+      - mysql
+    network_mode: bridge
+
+  haproxy:
+    image: haproxy:3.2.4
+    ports:
+      - "80:80"
+      - "8404:8404"
+    volumes:
+      - /home/khe/Desktop/flask_docker_demo/haproxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg
+    depends_on:
+      - web1
+      - web2
+    network_mode: bridge
