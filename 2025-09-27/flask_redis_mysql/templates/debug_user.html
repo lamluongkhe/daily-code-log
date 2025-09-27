@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Debug user: {{ username }}</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; margin: 20px; }
+    .box { border: 1px solid #ddd; padding: 14px; margin-bottom: 12px; border-radius: 6px; }
+    h1 { margin-top: 0; }
+    .label { font-weight: bold; color: #333; }
+    .val { margin-left: 8px; color: #111; }
+    .time { color: #666; font-size: 0.9em; margin-top: 6px; }
+    pre { background:#f7f7f7; padding:10px; border-radius:4px; overflow:auto; }
+    .ok { color: green; }
+    .miss { color: #b06; }
+  </style>
+</head>
+<body>
+  <h1>Debug user: {{ username }}</h1>
+
+  <div class="box">
+    <div class="label">Redis (cache)</div>
+    <div class="time">Latency: <span class="val">{{ redis_latency_ms }} ms</span></div>
+    {% if redis_value %}
+      <div class="label">Cache hit</div>
+      <pre>{{ redis_value }}</pre>
+    {% else %}
+      <div class="label miss">Cache miss</div>
+      <div>Key <code>user:{{ username }}</code> không tồn tại trong Redis hoặc hết hạn.</div>
+    {% endif %}
+  </div>
+
+  <div class="box">
+    <div class="label">MySQL (database)</div>
+    <div class="time">Query time: <span class="val">{{ mysql_latency_ms }} ms</span></div>
+
+    {% if mysql_user %}
+      <div class="label">Record found</div>
+      <pre>{{ mysql_user }}</pre>
+    {% else %}
+      <div class="label miss">Not found</div>
+      <div>Không tìm thấy user <code>{{ username }}</code> trong bảng <code>users</code>.</div>
+    {% endif %}
+  </div>
+
+  <div>
+    <a href="{{ url_for('welcome') if 'username' in session else url_for('login') }}">Quay lại</a>
+  </div>
+</body>
+</html>
+

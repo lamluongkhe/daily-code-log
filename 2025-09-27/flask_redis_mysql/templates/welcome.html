@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Chào mừng</title>
+</head>
+<body>
+    <h2>Xin chào {{ username }}!</h2>
+    <p>Thời gian đăng nhập: {{ login_time }} (nguồn: {{ source }})</p>
+    <p>⏱️ Thời gian SELECT MySQL: {{ mysql_duration }} giây</p>
+    <p>⚡ Thời gian SELECT Redis: {{ redis_duration }} giây</p>
+    <form action="{{ url_for('logout') }}" method="get">
+        <button type="submit">Đăng xuất</button>
+    </form>
+</body>
+</html>
+
