@@ -1,4 +1,4 @@
-while read lines 
+while read r 
 do 
-    echo $lines | cut -d " " -f 4
+    echo $r | cut -d " " -f 4
 done
