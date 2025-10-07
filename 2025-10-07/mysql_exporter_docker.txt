@@ -1,0 +1,49 @@
+# Ghi chú: Cách cài và debug MySQL Exporter bằng Docker
+
+## Nguyên nhân lỗi
+- `prom/mysqld-exporter` chạy trong thư mục `/`.
+- Nếu mount `.my.cnf` không đúng vị trí (vd: `/home/khe/.my.cnf vào /etc/.my.cnf`), container sẽ không tìm thấy file. vì khi start PATH: /bin/mysqld_exporter
+workdir ở / còn file .my.cnf ở /etc ==> ko có file
+
+---
+
+## Cách 1 — Mount vào `/`
+```bash
+chmod 644 /home/khe/.my.cnf
+
+docker run -d \
+  -p 9104:9104 \
+  --name mysql_exporter \
+  -v /home/khe/.my.cnf:/.my.cnf:ro \
+  prom/mysqld-exporter
+```
+
+---
+
+## Cách 2 — Mount vào `/etc/.my.cnf` và chỉ định config
+```bash
+docker run -d \
+  -p 9104:9104 \
+  --name mysql_exporter \
+  -v /home/khe/.my.cnf:/etc/.my.cnf:ro \
+  prom/mysqld-exporter --config.my-cnf="/etc/.my.cnf"
+```
+
+---
+
+## Cách 3 — Giữ container chạy vô hạn để debug
+```bash
+docker run -d --name test_mysql_exporter \
+  --entrypoint /bin/sh prom/mysqld-exporter -c "sleep infinity"
+```
+
+Sau đó:
+```bash
+docker exec -it test_mysql_exporter sh
+pwd
+ls -l /
+```
+Nếu vào đc thì copy file vào là chạy
+docker cp /home/khe/.my.cnf df744e06ad2c:/
+
+
