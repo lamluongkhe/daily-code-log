@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  master:
+    image: mysql:8.0
+    container_name: mysql-master
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: testdb
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./master-data:/var/lib/mysql
+      - ./master-conf:/etc/mysql/conf.d
+    command:
+      --server-id=1
+      --log-bin=mysql-bin
+      --binlog-do-db=testdb
+      --gtid-mode=ON
+      --enforce-gtid-consistency=ON
+      --log-slave-updates=ON
+      --binlog-format=ROW
+    network_mode: bridge
+
+  slave:
+    image: mysql:8.0
+    container_name: mysql-slave
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: testdb
+    ports:
+      - "3308:3306"
+    depends_on:
+      - master
+    volumes:
+      - ./slave-data:/var/lib/mysql
+      - ./slave-conf:/etc/mysql/conf.d
+    command:
+      --server-id=2
+      --relay-log=mysql-relay-bin
+      --gtid-mode=ON
+      --enforce-gtid-consistency=ON
+    network_mode: bridge
+

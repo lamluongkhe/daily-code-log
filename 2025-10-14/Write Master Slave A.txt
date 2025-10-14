@@ -1,0 +1,10 @@
+Write --> Master          --> Slave A ---> read
+                          --> Slave B  --> read
+Write position 1000       Lag Write position 900
+Read master (new)
+
+
+Master   slave2  slave2     (slave3 1TB--> 4TB)  
+ (4TB)      (4TB) (4TB)    
+                            (master)
+
