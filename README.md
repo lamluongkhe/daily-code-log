@@ -1,6 +1,7 @@
 # daily-code-log
 | Ngày | File | Loại | Ghi chú |
 |------|------|------|---------|
+| 2025-10-15 | Dns Server Setting.pdf | 📄 PDF | |
 | 2025-10-14 | Mysql Master Slave Docker.pdf | 📄 PDF | |
 | 2025-10-13 | Gitlab_DockerRegistry_GitlabRunner.pdf | 📄 PDF | |
 | 2025-10-12 | Hướng Dẫn Cài Nfs Và Ftp.pdf | 📄 PDF | |
