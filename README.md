@@ -1,6 +1,7 @@
 # daily-code-log
 | Ngày | File | Loại | Ghi chú |
 |------|------|------|---------|
+| 2025-10-18 | ELK Beats | 📁 Thư mục | |
 | 2025-10-17 | Architecture_ELK.png + ELK Beats dataflow | 🖼️  PNG | |
 | 2025-10-16 | Cài đặt Elasticsearch Logsstash Kibana.pdf | 📄 PDF + 📁 Thư mục| |
 | 2025-10-15 | Dns Server Setting.pdf | 📄 PDF | |
