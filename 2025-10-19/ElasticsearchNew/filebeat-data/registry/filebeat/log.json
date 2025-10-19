@@ -1,0 +1,10 @@
+{"op":"set","id":1}
+{"k":"filebeat::logs::native::6699440-2050","v":{"ttl":-1,"type":"log","identifier_name":"native","id":"native::6699440-2050","source":"/var/log/nginx/error.log","offset":0,"timestamp":[976770990,1760891533],"FileStateOS":{"inode":6699440,"device":2050},"prev_id":""}}
+{"op":"set","id":2}
+{"k":"filebeat::logs::native::6699440-2050","v":{"identifier_name":"native","id":"native::6699440-2050","prev_id":"","offset":50180,"type":"log","source":"/var/log/nginx/error.log","timestamp":[713294272,1760891568],"ttl":-1,"FileStateOS":{"inode":6699440,"device":2050}}}
+{"op":"set","id":3}
+{"k":"filebeat::logs::native::6699535-2050","v":{"source":"/var/log/nginx/access.log","timestamp":[713294272,1760891568],"ttl":-1,"identifier_name":"native","FileStateOS":{"inode":6699535,"device":2050},"id":"native::6699535-2050","prev_id":"","offset":64546,"type":"log"}}
+{"op":"set","id":4}
+{"k":"filebeat::logs::native::6699440-2050","v":{"offset":50392,"type":"log","FileStateOS":{"inode":6699440,"device":2050},"prev_id":"","source":"/var/log/nginx/error.log","timestamp":[512686664,1760891740],"ttl":-1,"identifier_name":"native","id":"native::6699440-2050"}}
+{"op":"set","id":5}
+{"k":"filebeat::logs::native::6699535-2050","v":{"prev_id":"","timestamp":[512686664,1760891740],"type":"log","FileStateOS":{"inode":6699535,"device":2050},"identifier_name":"native","id":"native::6699535-2050","source":"/var/log/nginx/access.log","offset":64724,"ttl":-1}}
