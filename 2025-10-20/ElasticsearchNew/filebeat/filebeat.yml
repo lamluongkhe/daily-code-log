@@ -1,0 +1,22 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /var/log/nginx/*.log
+
+output.logstash:
+  hosts: ["logstash:5044"]
+
+setup.template.enabled: false
+setup.kibana:
+  host: "kibana:5601"
+
+logging:
+  level: debug
+  to_files: true
+  to_stderr: true
+  files:
+    path: /usr/share/filebeat/logs
+    name: filebeat
+    keepfiles: 7
+    permissions: 0644

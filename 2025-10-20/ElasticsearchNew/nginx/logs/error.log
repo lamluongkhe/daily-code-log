@@ -1,0 +1,2 @@
+2025/10/20 14:11:36 [emerg] 1#1: duplicate location "/" in /etc/nginx/nginx.conf:17
+2025/10/20 14:12:43 [emerg] 1#1: duplicate location "/" in /etc/nginx/nginx.conf:17
