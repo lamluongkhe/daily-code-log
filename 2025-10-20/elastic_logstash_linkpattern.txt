@@ -1,0 +1,1 @@
+https://github.com/elastic/elasticsearch/tree/main/libs/grok/src/main/resources/patterns/ecs-v1
