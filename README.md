@@ -1,9 +1,11 @@
 # daily-code-log
 | Ngày | File | Loại | Ghi chú |
 |------|------|------|---------|
+| 2025-10-20 | ELK Beats (Ngix) grox or CSV filter pattern | 📁 Thư mục| |
+| 2025-10-19 | ELK Beats (fix) | 📁 Thư mục| |
 | 2025-10-18 | ELK Beats | 📁 Thư mục | |
 | 2025-10-17 | Architecture_ELK.png + ELK Beats dataflow | 🖼️  PNG | |
-| 2025-10-16 | Cài đặt Elasticsearch Logsstash Kibana.pdf | 📄 PDF + 📁 Thư mục| |
+| 2025-10-16 | Cài đặt Elasticsearch Logsstash Kibana Mysql.pdf | 📄 PDF + 📁 Thư mục| |
 | 2025-10-15 | Dns Server Setting.pdf | 📄 PDF | |
 | 2025-10-14 | Mysql Master Slave Docker.pdf | 📄 PDF | |
 | 2025-10-13 | Gitlab_DockerRegistry_GitlabRunner.pdf | 📄 PDF | |
