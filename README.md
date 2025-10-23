@@ -1,6 +1,7 @@
 # daily-code-log
 | Ngày | File | Loại | Ghi chú |
 |------|------|------|---------|
+| 2025-10-23 | Architecture.png (kubernetes) | 🖼️ PNG | |
 | 2025-10-22 | kubernetes-architecture.png + Kubernetes-resources.pdf | 🖼️  PNG | |
 | 2025-10-21 | ELK Beats Nginx Pipeline Guide.pdf | 📄 PDF | |
 | 2025-10-20 | ELK Beats (Ngix) grox or CSV filter pattern | 📁 Thư mục| |
