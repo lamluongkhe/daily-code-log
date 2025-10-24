@@ -1,0 +1,75 @@
+📌 **Minikube – Cluster Local Nâng Cao**
+
+─────────────────────────────
+1️⃣ Khởi tạo & quản lý cluster
+─────────────────────────────
+
+🖥️ **Cluster Operations**
+• start: minikube start -p khecluster --nodes=2 --cpus=4 --memory=8g
+  → Tạo cluster 2 node, mỗi node 4 CPU, 8GB RAM
+• stop: minikube stop -p khecluster
+  → Dừng cluster
+• delete: minikube delete -p khecluster
+  → Xóa cluster
+• status: minikube status -p khecluster
+  → Kiểm tra trạng thái cluster
+• ip: minikube ip -p khecluster
+  → Lấy IP cluster (NodePort service)
+• dashboard: minikube dashboard -p khecluster
+  → Mở UI dashboard
+• ssh: minikube ssh -p khecluster
+  → SSH vào node debug
+• logs: minikube logs -p khecluster
+  → Xem log toàn cluster
+• service: minikube service <svc> -n <ns> -p khecluster
+  → Mở NodePort service trên browser
+
+─────────────────────────────
+2️⃣ Kubectl – Thao tác nâng cao
+─────────────────────────────
+
+📌 **a. Xem tài nguyên**
+• kubectl get pods -n khens
+• kubectl get deployments -n khens
+• kubectl get rs -n khens
+• kubectl get svc -n khens
+• kubectl get all -n khens
+• kubectl describe pod <pod> -n khens
+
+📌 **b. Tạo / Xóa Pod & Deployment**
+• kubectl run nginx1 --image=nginx:latest --restart=Never
+• kubectl run nginx1 -n khens --image=lamluongkhe/nginx:3.0 --port=80 --restart=Never --command -- /opt/nginx/sbin/nginx -g 'daemon off;'
+• kubectl create deployment nginx-deployment --image=lamluongkhe/nginx:2.0 -n khens
+• kubectl apply -f nginx-deployment.yaml
+• kubectl delete pod nginx1 -n khens
+• kubectl delete deployment nginx-deployment -n khens
+
+📌 **c. Debug Pod / Container**
+• kubectl logs <pod> -n khens
+• kubectl logs -f <pod> -n khens
+• kubectl exec -it <pod> -n khens -- /bin/sh
+• kubectl describe pod <pod> -n khens
+
+📌 **d. Scaling / Rollout**
+• kubectl scale deployment nginx-deployment --replicas=3 -n khens
+• kubectl rollout status deployment nginx-deployment -n khens
+• kubectl rollout undo deployment nginx-deployment -n khens
+
+📌 **e. Service / Networking**
+• kubectl expose pod nginx1 --type=NodePort --port=80 --target-port=80 -n khens
+• kubectl expose deployment nginx-deployment --type=NodePort --port=8080 --target-port=80 -n khens
+• kubectl describe svc nginx-service -n khens
+• minikube service nginx-service -n khens
+
+📌 **f. Các trường hợp hay gặp**
+• Pod CrashLoopBackOff → CMD sai, missing file, permission  
+  → `kubectl logs <pod> -n khens` + `kubectl describe pod <pod> -n khens`
+
+• Pod exit Completed ngay → CMD chạy xong → fix foreground: `nginx -g 'daemon off;'`
+
+• NodePort không mở từ máy khác → minikube bind host IP → dùng `minikube ip + NodePort` hoặc `minikube tunnel`
+
+• Edit deployment trực tiếp → `kubectl edit deployment nginx-deployment -n khens`
+
+• Xem resource usage → `kubectl top pod -n khens` / `kubectl top node`
+
