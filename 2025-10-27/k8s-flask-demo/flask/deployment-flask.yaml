@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask-web
+  template:
+    metadata:
+      labels:
+        app: flask-web
+    spec:
+      containers:
+        - name: flask-web
+          image: lamluongkhe/web:0.1
+          ports:
+            - containerPort: 5000
+          env:
+            - name: MYSQL_HOST
+              value: "mysql"                   # trỏ tới Service MySQL (headless service)
+            - name: MYSQL_DATABASE
+              value: "flask_login_demo"        # nhập thủ công
+            - name: MYSQL_USER
+              valueFrom:
+                secretKeyRef:
+                  name: flask-secret
+                  key: MYSQL_USER
+            - name: MYSQL_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: flask-secret
+                  key: MYSQL_PASSWORD

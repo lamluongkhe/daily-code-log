@@ -1,0 +1,11 @@
+replicaCount: 2
+env:
+  MYSQL_HOST: "mysql"
+  MYSQL_DATABASE: "flask_login_demo"
+secrets:
+- name: MYSQL_USER
+  secretName: flask-secret
+  secretKey: MYSQL_USER
+- name: MYSQL_PASSWORD
+  secretName: flask-secret
+  secretKey: MYSQL_PASSWORD
