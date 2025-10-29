@@ -1,0 +1,27 @@
+mysql:
+  image: mysql:8.0
+  replicas: 1
+  database: flask_login_demo
+
+
+  secret:
+    rootPassword: root
+    user: kheuser
+    password: "123"
+
+
+
+  service:
+    name: mysql
+    port: 3306
+    type: ClusterIP
+    headless: true
+
+  storage:
+    size: 1Gi
+    storageClassName: manual
+    hostPath: /mnt/data
+
+
+  config:
+    maxConnections: 200
