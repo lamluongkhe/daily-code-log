@@ -1,0 +1,19 @@
+# --- English ---
+replicaCount: 1
+image:
+  repository: lamluongkhe/web
+  tag: "0.1"
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 5000
+
+mysql:
+  host: mysql
+  database: flask_login_demo
+
+secret:
+  mysqlUser: kheuser
+  mysqlPassword: "123"
+
