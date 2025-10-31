@@ -1,6 +1,13 @@
 # daily-code-log
 | Ngày | File | Loại | Ghi chú |
 |------|------|------|---------|
+| 2025-10-31 | sample-web (Change code git -> trigger runner build -> push docker images + tag -> (image:tag)  helm upgrade/install and deploy service mini kube) | 📁 Thư mục | |
+| 2025-10-30 | helm-demo (mysql-chart + flask-chart) | 📁 Thư mục | |
+| 2025-10-29 | helm-demo (mysql-chart) | 📁 Thư mục | |
+| 2025-10-28 | HelmWork.png + with-without-helm.jpg + helm.gif | 🖼️  PNG | |
+| 2025-10-27 | k8s-flask-demo (mysql + flask and learn helm) | 📁 Thư mục | |
+| 2025-10-26 | k8s-flask-demo (statefulset + service + pvc + configmap + secret) | 📁 Thư mục | |
+| 2025-10-25 | k8s-flask-demo | 📁 Thư mục | |
 | 2025-10-24 | 'Minikube Kubectl Cheatsheet.pdf + Minikube_kubectl_cmd.txt | 📄 PDF + 📄 TXT | |
 | 2025-10-23 | Architecture.png (kubernetes) | 🖼️ PNG | |
 | 2025-10-22 | kubernetes-architecture.png + Kubernetes-resources.pdf | 🖼️  PNG | |
