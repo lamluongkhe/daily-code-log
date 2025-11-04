@@ -1,0 +1,10 @@
+image:
+  repository: lamluongkhe/sample-web
+  tag: latest
+  pullPolicy: Always
+
+service:
+  type: NodePort
+  port: 80
+  nodePort: 30080
+
