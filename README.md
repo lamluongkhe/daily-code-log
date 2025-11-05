@@ -1,6 +1,11 @@
 # daily-code-log
 | Ngày | File | Loại | Ghi chú |
 |------|------|------|---------|
+| 2025-11-05 | web-haproxy_CI-CD (Finish) | 📁 Thư mục | |
+| 2025-11-04 | web-haproxy_CI-CD (day2) | 📁 Thư mục | |
+| 2025-11-03 | web-haproxy_CI-CD (day1) | 📁 Thư mục | |
+| 2025-11-02 | CI-CD_Flow.png | 📄 PDF | |
+| 2025-11-01 | Github_Docker_K8s_Helm Flow.pdf | 📄 PDF | |
 | 2025-10-31 | sample-web (Change code git -> trigger runner build -> push docker images + tag -> (image:tag)  helm upgrade/install and deploy service mini kube) | 📁 Thư mục | |
 | 2025-10-30 | helm-demo (mysql-chart + flask-chart) | 📁 Thư mục | |
 | 2025-10-29 | helm-demo (mysql-chart) | 📁 Thư mục | |
