@@ -1,6 +1,7 @@
 # daily-code-log
 | Ngày | File | Loại | Ghi chú |
 |------|------|------|---------|
+| 2025-11-06 | web-nginx_ingress | 📁 Thư mục | |
 | 2025-11-05 | web-haproxy_CI-CD (Finish) | 📁 Thư mục | |
 | 2025-11-04 | web-haproxy_CI-CD (day2) | 📁 Thư mục | |
 | 2025-11-03 | web-haproxy_CI-CD (day1) | 📁 Thư mục | |
