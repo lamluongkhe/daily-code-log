@@ -19,6 +19,5 @@ Dưới đây là các link tham khảo các câu hỏi phỏng vấn DevOps tr�
 ## Cloud & Monitoring
 7. [Câu hỏi phỏng vấn Cloud/Monitoring cho fresher](https://itviec.com/blog/cloud-monitoring-interview-questions/?utm_source=chatgpt.com) – ITviec Blog
 
-> ⚠ Lưu ý: Các link trên được tổng hợp từ các trang uy tín. Khi đăng Git, bạn có thể giữ nguyên nguồn để tôn trọng bản quyền.
-
-
+## Video
+https://www.youtube.com/@devopseduvn
