@@ -1,0 +1,618 @@
+2025-11-10 14:28:30.68 Server      Microsoft SQL Server 2022 (RTM-CU21) (KB5065865) - 16.0.4215.2 (X64) 
+	Aug 11 2025 13:24:21 
+	Copyright (C) 2022 Microsoft Corporation
+	Developer Edition (64-bit) on Linux (Ubuntu 22.04.5 LTS) <X64>
+2025-11-10 14:28:30.69 Server      UTC adjustment: 0:00
+2025-11-10 14:28:30.69 Server      (c) Microsoft Corporation.
+2025-11-10 14:28:30.69 Server      All rights reserved.
+2025-11-10 14:28:30.69 Server      Server process ID is 472.
+2025-11-10 14:28:30.69 Server      Logging SQL Server messages in file '/var/opt/mssql/log/errorlog'.
+2025-11-10 14:28:30.69 Server      Registry startup parameters: 
+	 -d /var/opt/mssql/data/master.mdf
+	 -l /var/opt/mssql/data/mastlog.ldf
+	 -e /var/opt/mssql/log/errorlog
+2025-11-10 14:28:30.70 Server      SQL Server detected 1 sockets with 4 cores per socket and 8 logical processors per socket, 8 total logical processors; using 8 logical processors based on SQL Server licensing. This is an informational message; no user action is required.
+2025-11-10 14:28:30.70 Server      SQL Server is starting at normal priority base (=7). This is an informational message only. No user action is required.
+2025-11-10 14:28:30.70 Server      Detected 12760 MB of RAM, 10927 MB of available memory, 10927 MB of available page file. This is an informational message; no user action is required.
+2025-11-10 14:28:30.70 Server      Using conventional memory in the memory manager.
+2025-11-10 14:28:30.71 Server      Detected pause instruction latency: 140 cycles.
+2025-11-10 14:28:30.71 Server      SQL Server detected the following NUMA node configuration (NUMA Node number 0, Processor Group number 0, CPU Mask 0x00000000000000ff).
+2025-11-10 14:28:30.71 Server      Page exclusion bitmap is enabled.
+2025-11-10 14:28:30.75 Server      Buffer pool extension is not supported on Linux platform.
+2025-11-10 14:28:30.75 Server      Buffer Pool: Allocating 16777216 bytes for 1741763 hashPages.
+2025-11-10 14:28:30.87 Server      Buffer pool extension is already disabled. No action is necessary.
+2025-11-10 14:28:31.29 Server      Installing Client TLS certificates to the store.
+2025-11-10 14:28:31.30 Server      CPU vectorization level(s) detected:  SSE SSE2 SSE3 SSSE3 SSE41 SSE42 AVX AVX2 POPCNT BMI1 BMI2
+2025-11-10 14:28:31.33 Server      Successfully initialized the TLS configuration. Allowed TLS protocol versions are ['1.0 1.1 1.2']. Allowed TLS ciphers are ['ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-ECDSA-AES128-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:!DHE-RSA-AES256-GCM-SHA384:!DHE-RSA-AES128-GCM-SHA256:!DHE-RSA-AES256-SHA:!DHE-RSA-AES128-SHA'].
+2025-11-10 14:28:31.35 Server      Query Store settings initialized with enabled = 1, 
+2025-11-10 14:28:31.36 Server      The maximum number of dedicated administrator connections for this instance is '1'
+2025-11-10 14:28:31.36 Server      Node configuration: node 0: CPU mask: 0x00000000000000ff:0 Active CPU mask: 0x00000000000000ff:0. This message provides a description of the NUMA configuration for this computer. This is an informational message only. No user action is required.
+2025-11-10 14:28:31.37 Server      Using dynamic lock allocation.  Initial allocation of 2500 Lock blocks and 5000 Lock Owner blocks per node.  This is an informational message only.  No user action is required.
+2025-11-10 14:28:31.39 Server      In-Memory OLTP initialized on standard machine.
+2025-11-10 14:28:31.41 Server      [INFO] Created Extended Events session 'hkenginexesession'
+2025-11-10 14:28:31.41 Server      Database Instant File Initialization: enabled. For security and performance considerations see the topic 'Database Instant File Initialization' in SQL Server Books Online. This is an informational message only. No user action is required.
+2025-11-10 14:28:31.42 Server      Total Log Writer threads: 2. This is an informational message; no user action is required.
+2025-11-10 14:28:31.42 Server      clflushopt is selected for pmem flush operation.
+2025-11-10 14:28:31.43 Server      Software Usage Metrics is disabled.
+2025-11-10 14:28:31.43 spid27s     [1]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:28:31.43 spid27s     Starting up database 'master'.
+2025-11-10 14:28:31.47 Server      CLR version v4.0.30319 loaded.
+2025-11-10 14:28:31.50 spid27s     10 transactions rolled forward in database 'master' (1:0). This is an informational message only. No user action is required.
+2025-11-10 14:28:31.51 spid27s     0 transactions rolled back in database 'master' (1:0). This is an informational message only. No user action is required.
+2025-11-10 14:28:31.52 spid27s     Recovery is writing a checkpoint in database 'master' (1). This is an informational message only. No user action is required.
+2025-11-10 14:28:31.61 spid27s     [32762]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:28:31.61 spid30s     [32767]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:28:31.61 spid27s     Starting up database 'model_replicatedmaster'.
+2025-11-10 14:28:31.61 spid30s     Starting up database 'mssqlsystemresource'.
+2025-11-10 14:28:31.62 spid30s     The resource database build version is 16.00.4215. This is an informational message only. No user action is required.
+2025-11-10 14:28:31.64 spid30s     [3]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:28:31.64 spid30s     Starting up database 'model'.
+2025-11-10 14:28:31.70 spid27s     Converting database 'model_replicatedmaster' from version 927 to the current version 957.
+2025-11-10 14:28:31.70 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 927 to version 928.
+2025-11-10 14:28:31.72 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 928 to version 929.
+2025-11-10 14:28:31.72 spid30s     1 transactions rolled forward in database 'model' (3:0). This is an informational message only. No user action is required.
+2025-11-10 14:28:31.72 Server      Common language runtime (CLR) functionality initialized.
+2025-11-10 14:28:31.75 spid30s     0 transactions rolled back in database 'model' (3:0). This is an informational message only. No user action is required.
+2025-11-10 14:28:31.77 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 929 to version 930.
+2025-11-10 14:28:31.78 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 930 to version 931.
+2025-11-10 14:28:31.79 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 931 to version 932.
+2025-11-10 14:28:31.80 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 932 to version 933.
+2025-11-10 14:28:31.80 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 933 to version 934.
+2025-11-10 14:28:31.81 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 934 to version 935.
+2025-11-10 14:28:31.82 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 935 to version 936.
+2025-11-10 14:28:31.82 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 936 to version 937.
+2025-11-10 14:28:31.83 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 937 to version 938.
+2025-11-10 14:28:31.84 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 938 to version 939.
+2025-11-10 14:28:31.85 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 939 to version 940.
+2025-11-10 14:28:31.85 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 940 to version 941.
+2025-11-10 14:28:31.86 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 941 to version 942.
+2025-11-10 14:28:31.87 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 942 to version 943.
+2025-11-10 14:28:31.90 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 943 to version 944.
+2025-11-10 14:28:31.91 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 944 to version 945.
+2025-11-10 14:28:31.92 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 945 to version 946.
+2025-11-10 14:28:31.93 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 946 to version 947.
+2025-11-10 14:28:31.94 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 947 to version 948.
+2025-11-10 14:28:31.94 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 948 to version 949.
+2025-11-10 14:28:31.95 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 949 to version 950.
+2025-11-10 14:28:31.96 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 950 to version 951.
+2025-11-10 14:28:31.97 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 951 to version 952.
+2025-11-10 14:28:31.98 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 952 to version 953.
+2025-11-10 14:28:32.00 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 953 to version 954.
+2025-11-10 14:28:32.01 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 954 to version 955.
+2025-11-10 14:28:32.01 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 955 to version 956.
+2025-11-10 14:28:32.03 spid27s     Database 'model_replicatedmaster' running the upgrade step from version 956 to version 957.
+2025-11-10 14:28:32.07 spid27s     [32761]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:28:32.07 spid27s     Starting up database 'model_msdb'.
+2025-11-10 14:28:32.07 spid37s     A self-generated certificate was successfully loaded for encryption.
+2025-11-10 14:28:32.08 spid37s     Server is listening on [ 'any' <ipv6> 1433] accept sockets 1.
+2025-11-10 14:28:32.08 spid37s     Server is listening on [ 'any' <ipv4> 1433] accept sockets 1.
+2025-11-10 14:28:32.08 Server      Server is listening on [ ::1 <ipv6> 1434] accept sockets 1.
+2025-11-10 14:28:32.08 Server      Server is listening on [ 127.0.0.1 <ipv4> 1434] accept sockets 1.
+2025-11-10 14:28:32.08 Server      Dedicated admin connection support was established for listening locally on port 1434.
+2025-11-10 14:28:32.08 spid37s     Server is listening on [ ::1 <ipv6> 1431] accept sockets 1.
+2025-11-10 14:28:32.09 spid37s     Server is listening on [ 127.0.0.1 <ipv4> 1431] accept sockets 1.
+2025-11-10 14:28:32.09 spid37s     SQL Server is now ready for client connections. This is an informational message; no user action is required.
+2025-11-10 14:28:32.15 spid27s     Converting database 'model_msdb' from version 927 to the current version 957.
+2025-11-10 14:28:32.15 spid27s     Database 'model_msdb' running the upgrade step from version 927 to version 928.
+2025-11-10 14:28:32.18 Server      External governance manager initialized
+2025-11-10 14:28:32.19 spid27s     Database 'model_msdb' running the upgrade step from version 928 to version 929.
+2025-11-10 14:28:32.23 spid27s     Database 'model_msdb' running the upgrade step from version 929 to version 930.
+2025-11-10 14:28:32.24 spid27s     Database 'model_msdb' running the upgrade step from version 930 to version 931.
+2025-11-10 14:28:32.27 spid27s     Database 'model_msdb' running the upgrade step from version 931 to version 932.
+2025-11-10 14:28:32.29 spid27s     Database 'model_msdb' running the upgrade step from version 932 to version 933.
+2025-11-10 14:28:32.32 spid27s     Database 'model_msdb' running the upgrade step from version 933 to version 934.
+2025-11-10 14:28:32.33 spid27s     Database 'model_msdb' running the upgrade step from version 934 to version 935.
+2025-11-10 14:28:32.35 spid27s     Database 'model_msdb' running the upgrade step from version 935 to version 936.
+2025-11-10 14:28:32.37 spid27s     Database 'model_msdb' running the upgrade step from version 936 to version 937.
+2025-11-10 14:28:32.38 spid27s     Database 'model_msdb' running the upgrade step from version 937 to version 938.
+2025-11-10 14:28:32.39 spid27s     Database 'model_msdb' running the upgrade step from version 938 to version 939.
+2025-11-10 14:28:32.41 spid27s     Database 'model_msdb' running the upgrade step from version 939 to version 940.
+2025-11-10 14:28:32.42 spid27s     Database 'model_msdb' running the upgrade step from version 940 to version 941.
+2025-11-10 14:28:32.43 spid27s     Database 'model_msdb' running the upgrade step from version 941 to version 942.
+2025-11-10 14:28:32.45 spid27s     Database 'model_msdb' running the upgrade step from version 942 to version 943.
+2025-11-10 14:28:32.50 spid27s     Database 'model_msdb' running the upgrade step from version 943 to version 944.
+2025-11-10 14:28:32.51 spid27s     Database 'model_msdb' running the upgrade step from version 944 to version 945.
+2025-11-10 14:28:32.54 spid27s     Database 'model_msdb' running the upgrade step from version 945 to version 946.
+2025-11-10 14:28:32.55 spid27s     Database 'model_msdb' running the upgrade step from version 946 to version 947.
+2025-11-10 14:28:32.56 spid27s     Database 'model_msdb' running the upgrade step from version 947 to version 948.
+2025-11-10 14:28:32.57 spid27s     Database 'model_msdb' running the upgrade step from version 948 to version 949.
+2025-11-10 14:28:32.58 spid27s     Database 'model_msdb' running the upgrade step from version 949 to version 950.
+2025-11-10 14:28:32.59 spid27s     Database 'model_msdb' running the upgrade step from version 950 to version 951.
+2025-11-10 14:28:32.62 spid27s     Database 'model_msdb' running the upgrade step from version 951 to version 952.
+2025-11-10 14:28:32.63 spid27s     Database 'model_msdb' running the upgrade step from version 952 to version 953.
+2025-11-10 14:28:32.64 spid27s     Database 'model_msdb' running the upgrade step from version 953 to version 954.
+2025-11-10 14:28:32.65 spid27s     Database 'model_msdb' running the upgrade step from version 954 to version 955.
+2025-11-10 14:28:32.66 spid27s     Database 'model_msdb' running the upgrade step from version 955 to version 956.
+2025-11-10 14:28:32.71 spid27s     Database 'model_msdb' running the upgrade step from version 956 to version 957.
+2025-11-10 14:28:32.80 spid39s     Attribute synchronization initialized
+2025-11-10 14:28:32.80 spid27s     Resource governor reconfiguration succeeded.
+2025-11-10 14:28:32.80 spid39s     Attribute synchronization manager initialized
+2025-11-10 14:28:32.80 spid27s     SQL Server Audit is starting the audits. This is an informational message. No user action is required.
+2025-11-10 14:28:32.80 spid27s     SQL Server Audit has started the audits. This is an informational message. No user action is required.
+2025-11-10 14:28:32.83 spid27s     SQL Trace ID 1 was started by login "sa".
+2025-11-10 14:28:32.85 spid27s     Server name is '19c2a7cb0c50'. This is an informational message only. No user action is required.
+2025-11-10 14:28:32.86 spid48s     Always On: The availability replica manager is starting. This is an informational message only. No user action is required.
+2025-11-10 14:28:32.86 spid30s     Clearing tempdb database.
+2025-11-10 14:28:32.86 spid50s     [4]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:28:32.86 spid48s     Always On: The availability replica manager is waiting for the instance of SQL Server to allow client connections. This is an informational message only. No user action is required.
+2025-11-10 14:28:32.87 spid50s     Starting up database 'msdb'.
+2025-11-10 14:28:32.97 spid50s     Converting database 'msdb' from version 927 to the current version 957.
+2025-11-10 14:28:32.97 spid50s     Database 'msdb' running the upgrade step from version 927 to version 928.
+2025-11-10 14:28:32.98 spid50s     Database 'msdb' running the upgrade step from version 928 to version 929.
+2025-11-10 14:28:33.05 spid50s     Database 'msdb' running the upgrade step from version 929 to version 930.
+2025-11-10 14:28:33.09 spid30s     [2]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:28:33.10 spid30s     Starting up database 'tempdb'.
+2025-11-10 14:28:33.11 spid50s     Database 'msdb' running the upgrade step from version 930 to version 931.
+2025-11-10 14:28:33.13 spid50s     Database 'msdb' running the upgrade step from version 931 to version 932.
+2025-11-10 14:28:33.14 spid50s     Database 'msdb' running the upgrade step from version 932 to version 933.
+2025-11-10 14:28:33.15 spid50s     Database 'msdb' running the upgrade step from version 933 to version 934.
+2025-11-10 14:28:33.16 spid50s     Database 'msdb' running the upgrade step from version 934 to version 935.
+2025-11-10 14:28:33.17 spid50s     Database 'msdb' running the upgrade step from version 935 to version 936.
+2025-11-10 14:28:33.18 spid50s     Database 'msdb' running the upgrade step from version 936 to version 937.
+2025-11-10 14:28:33.20 spid50s     Database 'msdb' running the upgrade step from version 937 to version 938.
+2025-11-10 14:28:33.21 spid30s     The tempdb database has 1 data file(s).
+2025-11-10 14:28:33.21 spid50s     Database 'msdb' running the upgrade step from version 938 to version 939.
+2025-11-10 14:28:33.22 spid48s     The Service Broker endpoint is in disabled or stopped state.
+2025-11-10 14:28:33.22 spid48s     The Database Mirroring endpoint is in disabled or stopped state.
+2025-11-10 14:28:33.22 spid50s     Database 'msdb' running the upgrade step from version 939 to version 940.
+2025-11-10 14:28:33.24 spid48s     Service Broker manager has started.
+2025-11-10 14:28:33.24 spid50s     Database 'msdb' running the upgrade step from version 940 to version 941.
+2025-11-10 14:28:33.26 spid50s     Database 'msdb' running the upgrade step from version 941 to version 942.
+2025-11-10 14:28:33.28 spid50s     Database 'msdb' running the upgrade step from version 942 to version 943.
+2025-11-10 14:28:33.33 spid50s     Database 'msdb' running the upgrade step from version 943 to version 944.
+2025-11-10 14:28:33.34 spid50s     Database 'msdb' running the upgrade step from version 944 to version 945.
+2025-11-10 14:28:33.36 spid50s     Database 'msdb' running the upgrade step from version 945 to version 946.
+2025-11-10 14:28:33.37 spid50s     Database 'msdb' running the upgrade step from version 946 to version 947.
+2025-11-10 14:28:33.38 spid50s     Database 'msdb' running the upgrade step from version 947 to version 948.
+2025-11-10 14:28:33.39 spid50s     Database 'msdb' running the upgrade step from version 948 to version 949.
+2025-11-10 14:28:33.40 spid50s     Database 'msdb' running the upgrade step from version 949 to version 950.
+2025-11-10 14:28:33.41 spid50s     Database 'msdb' running the upgrade step from version 950 to version 951.
+2025-11-10 14:28:33.43 spid50s     Database 'msdb' running the upgrade step from version 951 to version 952.
+2025-11-10 14:28:33.45 spid50s     Database 'msdb' running the upgrade step from version 952 to version 953.
+2025-11-10 14:28:33.48 spid50s     Database 'msdb' running the upgrade step from version 953 to version 954.
+2025-11-10 14:28:33.49 spid50s     Database 'msdb' running the upgrade step from version 954 to version 955.
+2025-11-10 14:28:33.50 spid50s     Database 'msdb' running the upgrade step from version 955 to version 956.
+2025-11-10 14:28:33.53 spid50s     Database 'msdb' running the upgrade step from version 956 to version 957.
+2025-11-10 14:28:33.59 spid27s     Recovery is complete. This is an informational message only. No user action is required.
+2025-11-10 14:35:07.63 spid66      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:35:07.64 spid66      Starting up database 'QuizDB'.
+2025-11-10 14:35:07.64 spid66      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:35:07.64 spid66      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:35:07.71 spid66      The database 'QuizDB' is marked RESTORING and is in a state that does not allow recovery to be run.
+2025-11-10 14:35:07.83 spid66      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:35:07.83 spid66      Starting up database 'QuizDB'.
+2025-11-10 14:35:07.83 spid66      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:35:07.84 spid66      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:35:07.89 spid66      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:35:07.89 spid66      The tail of the log for database QuizDB is being rewritten to match the new sector size of 4096 bytes.  1024 bytes at offset 1166336 in file /var/opt/mssql/data/QuizDB_log.ldf will be written.
+2025-11-10 14:35:07.91 spid66      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:35:08.77 spid66      Synchronize Database 'QuizDB' (5) with Resource Database.
+2025-11-10 14:35:08.79 Backup      Restore is complete on database 'QuizDB'.  The database is now available.
+2025-11-10 14:35:08.81 Backup      Database was restored: Database: QuizDB, creation date(time): 2023/09/23(14:23:02), first LSN: 37:2259:1, last LSN: 37:2262:1, number of dump devices: 1, device information: (FILE=1, TYPE=DISK: {'/var/opt/mssql/backup/QuizDB.bak'}). Informational message. No user action required.
+2025-11-10 14:35:08.83 Backup      RESTORE DATABASE successfully processed 481 pages in 0.028 seconds (133.980 MB/sec).
+2025-11-10 14:35:23.89 spid65      Attempting to load library 'xplog70.dll' into memory. This is an informational message only. No user action is required.
+2025-11-10 14:35:23.92 spid65      Using 'xplog70.dll' version '2022.160.4215' to execute extended stored procedure 'xp_msver'. This is an informational message only; no user action is required.
+2025-11-10 14:35:27.66 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:35:27.66 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:35:27.66 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:35:27.66 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:35:27.71 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:35:27.73 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:36:00.98 spid66      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:36:00.99 spid66      Starting up database 'QuizDB'.
+2025-11-10 14:36:00.99 spid66      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:36:00.99 spid66      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:36:01.03 spid66      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:36:01.05 spid66      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:36:11.47 spid66      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:36:11.47 spid66      Starting up database 'QuizDB'.
+2025-11-10 14:36:11.47 spid66      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:36:11.47 spid66      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:36:11.52 spid66      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:36:11.54 spid66      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:37:52.51 spid65      Using 'dbghelp.dll' version '4.0.5'
+2025-11-10 14:39:07.35 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:39:07.35 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:39:07.35 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:39:07.36 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:39:07.42 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:07.44 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:10.11 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:39:10.12 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:39:10.12 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:39:10.12 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:39:10.17 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:10.18 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:13.11 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:39:13.11 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:39:13.11 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:39:13.11 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:39:13.16 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:13.18 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:15.91 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:39:15.91 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:39:15.91 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:39:15.91 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:39:15.96 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:15.97 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:17.58 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:39:17.59 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:39:17.59 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:39:17.59 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:39:17.64 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:17.65 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:20.49 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:39:20.50 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:39:20.50 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:39:20.50 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:39:20.54 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:20.56 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:22.62 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:39:22.62 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:39:22.62 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:39:22.62 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:39:22.68 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:22.70 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:24.50 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:39:24.51 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:39:24.51 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:39:24.51 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:39:24.58 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:24.59 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:26.68 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:39:26.69 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:39:26.69 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:39:26.69 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:39:26.75 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:26.77 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:30.49 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:39:30.50 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:39:30.50 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:39:30.51 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:39:30.57 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:30.59 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:34.18 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:39:34.19 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:39:34.19 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:39:34.20 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:39:34.25 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:34.27 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:37.47 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:39:37.48 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:39:37.48 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:39:37.49 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:39:37.55 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:37.57 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:39.29 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:39:39.30 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:39:39.31 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:39:39.31 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:39:39.39 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:39.40 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:41.31 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:39:41.32 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:39:41.32 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:39:41.33 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:39:41.40 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:41.42 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:43.00 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:39:43.00 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:39:43.01 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:39:43.01 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:39:43.09 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:43.10 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:45.67 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:39:45.68 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:39:45.68 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:39:45.69 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:39:45.78 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:45.80 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:48.94 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:39:48.95 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:39:48.95 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:39:48.96 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:39:49.04 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:49.06 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:51.93 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:39:51.94 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:39:51.94 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:39:51.95 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:39:52.02 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:52.03 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:54.63 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:39:54.64 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:39:54.64 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:39:54.65 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:39:54.72 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:54.73 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:57.02 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:39:57.03 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:39:57.04 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:39:57.04 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:39:57.13 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:57.14 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:39:59.94 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:39:59.95 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:39:59.96 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:39:59.96 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:40:00.03 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:00.05 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:02.49 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:40:02.50 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:40:02.50 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:40:02.50 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:40:02.55 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:02.56 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:04.98 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:40:04.99 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:40:04.99 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:40:05.00 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:40:05.07 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:05.08 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:07.64 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:40:07.65 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:40:07.65 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:40:07.66 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:40:07.72 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:07.74 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:11.28 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:40:11.28 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:40:11.29 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:40:11.29 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:40:11.33 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:11.35 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:13.53 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:40:13.54 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:40:13.55 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:40:13.55 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:40:13.62 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:13.64 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:16.17 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:40:16.18 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:40:16.19 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:40:16.19 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:40:16.26 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:16.27 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:18.65 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:40:18.66 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:40:18.67 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:40:18.67 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:40:18.74 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:18.77 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:21.15 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:40:21.16 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:40:21.16 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:40:21.16 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:40:21.22 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:21.24 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:23.34 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:40:23.35 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:40:23.35 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:40:23.36 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:40:23.42 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:23.43 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:25.11 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:40:25.11 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:40:25.11 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:40:25.11 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:40:25.16 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:25.17 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:27.19 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:40:27.20 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:40:27.20 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:40:27.20 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:40:27.24 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:27.26 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:30.16 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:40:30.17 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:40:30.17 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:40:30.18 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:40:30.25 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:30.26 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:32.81 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:40:32.83 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:40:32.83 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:40:32.83 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:40:32.90 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:32.92 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:35.32 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:40:35.33 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:40:35.33 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:40:35.34 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:40:35.40 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:35.41 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:38.34 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:40:38.35 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:40:38.35 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:40:38.35 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:40:38.40 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:38.41 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:41.67 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:40:41.68 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:40:41.69 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:40:41.69 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:40:41.75 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:41.76 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:45.69 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:40:45.70 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:40:45.70 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:40:45.71 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:40:45.78 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:45.79 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:47.95 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:40:47.96 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:40:47.96 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:40:47.96 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:40:48.01 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:48.03 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:50.53 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:40:50.54 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:40:50.54 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:40:50.55 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:40:50.63 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:50.64 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:52.58 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:40:52.59 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:40:52.59 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:40:52.59 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:40:52.66 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:52.67 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:54.66 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:40:54.67 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:40:54.67 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:40:54.67 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:40:54.72 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:54.73 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:57.05 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:40:57.06 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:40:57.06 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:40:57.06 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:40:57.12 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:40:57.14 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:00.49 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:41:00.50 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:41:00.51 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:41:00.51 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:41:00.59 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:00.60 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:02.40 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:41:02.41 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:41:02.42 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:41:02.42 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:41:02.48 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:02.49 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:05.18 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:41:05.18 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:41:05.18 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:41:05.18 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:41:05.23 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:05.24 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:10.12 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:41:10.12 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:41:10.12 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:41:10.13 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:41:10.19 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:10.20 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:12.32 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:41:12.33 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:41:12.33 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:41:12.33 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:41:12.37 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:12.38 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:15.32 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:41:15.32 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:41:15.32 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:41:15.33 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:41:15.37 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:15.39 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:17.48 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:41:17.48 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:41:17.48 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:41:17.48 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:41:17.53 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:17.55 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:20.40 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:41:20.41 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:41:20.41 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:41:20.41 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:41:20.47 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:20.49 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:23.38 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:41:23.38 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:41:23.38 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:41:23.39 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:41:23.44 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:23.46 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:25.55 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:41:25.56 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:41:25.56 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:41:25.57 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:41:25.64 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:25.66 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:27.56 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:41:27.57 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:41:27.57 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:41:27.58 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:41:27.64 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:27.66 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:29.28 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:41:29.29 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:41:29.29 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:41:29.29 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:41:29.34 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:29.36 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:31.28 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:41:31.29 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:41:31.29 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:41:31.29 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:41:31.34 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:31.36 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:33.21 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:41:33.22 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:41:33.22 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:41:33.22 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:41:33.27 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:33.29 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:35.72 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:41:35.73 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:41:35.73 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:41:35.74 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:41:35.80 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:35.82 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:37.74 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:41:37.74 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:41:37.75 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:41:37.75 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:41:37.80 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:37.82 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:39.90 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:41:39.90 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:41:39.90 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:41:39.90 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:41:39.95 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:39.97 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:41.83 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:41:41.84 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:41:41.84 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:41:41.84 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:41:41.88 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:41.90 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:43.39 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:41:43.40 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:41:43.40 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:41:43.40 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:41:43.44 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:43.47 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:45.26 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:41:45.27 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:41:45.27 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:41:45.27 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:41:45.32 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:45.34 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:47.31 spid65      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 14:41:47.31 spid65      Starting up database 'QuizDB'.
+2025-11-10 14:41:47.32 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 14:41:47.32 spid65      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 14:41:47.38 spid65      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 14:41:47.40 spid65      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 15:21:26.42 Logon       Error: 17836, Severity: 20, State: 17.
+2025-11-10 15:21:26.42 Logon       Length specified in network packet payload did not match number of bytes read; the connection has been closed. Please contact the vendor of the client library. [CLIENT: 172.17.0.3]
+2025-11-10 15:28:33.34 spid9s      [DevOpsSnapshotTelemetryTask] Evaluating the background task.
+2025-11-10 15:31:40.06 spid54      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 15:31:40.07 spid54      Starting up database 'QuizDB'.
+2025-11-10 15:31:40.07 spid54      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 15:31:40.07 spid54      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 15:31:40.12 spid54      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 15:31:40.15 spid54      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 16:01:53.36 spid56      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 16:01:53.36 spid56      Starting up database 'QuizDB'.
+2025-11-10 16:01:53.36 spid56      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 16:01:53.36 spid56      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 16:01:53.42 spid56      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 16:01:53.45 spid56      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].
+2025-11-10 16:33:16.46 spid60      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-11-10 16:33:16.46 spid60      Starting up database 'QuizDB'.
+2025-11-10 16:33:16.46 spid60      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-11-10 16:33:16.47 spid60      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-11-10 16:33:16.53 spid60      Parallel redo is started for database 'QuizDB' with worker pool size [4].
+2025-11-10 16:33:16.54 spid60      Parallel redo is shutdown for database 'QuizDB' with worker pool size [4].

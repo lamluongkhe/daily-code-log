@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\tracnghiemAPI",
+    "\\tracnghiemAPI\\tracnghiemAPI",
+    "\\tracnghiemAPI\\tracnghiemAPI\\Controllers",
+    "\\tracnghiemAPI\\tracnghiemAPI\\Models"
+  ],
+  "SelectedNode": "\\tracnghiemAPI\\tracnghiemAPI\\Controllers\\QuestionsController.cs",
+  "PreviewInSolutionExplorer": false
+}
