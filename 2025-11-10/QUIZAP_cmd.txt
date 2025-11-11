@@ -1,5 +1,8 @@
 QUIZAP:
-        MSSQL:/opt/mssql-tools18/bin/sqlcmd -S localhost -U SA -P "Admin@123" -C
+
+docker run -d   --name quizapp-mssql   -e "ACCEPT_EULA=Y"   -e "SA_PASSWORD=Admin@123"   -p 1433:1433   -v $(pwd)/QuizDB.bak:/var/opt/mssql/backup/QuizDB.bak   -v $(pwd)/data:/var/opt/mssql   mcr.microsoft.com/mssql/server:2022-latest
+
+  - MSSQL: /opt/mssql-tools18/bin/sqlcmd -S localhost -U SA -P "Admin@123" -C
 
 
 docker run -d -p 5000:80 \
