@@ -1,6 +1,11 @@
 # daily-code-log
 | Ngày | File | Loại | Ghi chú |
 |------|------|------|---------|
+| 2025-11-11 | Quiz App K8s + Helm | 📁 Thư mục | |
+| 2025-11-10 | Quiz App Docker | 📁 Thư mục | |
+| 2025-11-09 | Lý thuyết phỏng vấn Prometheus + Grafana (Monitoring) | 📄 PDF, Markdown | |
+| 2025-11-08 | Lý Thuyết phỏng vấn Devops | 📄 Markdown | |
+| 2025-11-07 | learn-bash.sh | ⚙️ SH | |
 | 2025-11-06 | web-nginx_ingress | 📁 Thư mục | |
 | 2025-11-05 | web-haproxy_CI-CD (Finish) | 📁 Thư mục | |
 | 2025-11-04 | web-haproxy_CI-CD (day2) | 📁 Thư mục | |
