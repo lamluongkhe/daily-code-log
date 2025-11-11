@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.mssql.name }}
+  labels:
+    app: {{ .Values.mssql.name }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Values.mssql.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.mssql.name }}
+    spec:
+      containers:
+        - name: {{ .Values.mssql.name }}
+          image: {{ .Values.mssql.image }}
+          env:
+            - name: ACCEPT_EULA
+              value: "Y"
+            - name: SA_PASSWORD
+              value: {{ .Values.mssql.password }}
+          ports:
+            - containerPort: {{ .Values.mssql.port }}
+          volumeMounts:
+            - name: mssql-data
+              mountPath: {{ .Values.mssql.volumePath }}
+      volumes:
+        - name: mssql-data
+          emptyDir: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.mssql.name }}
+spec:
+  selector:
+    app: {{ .Values.mssql.name }}
+  ports:
+    - port: {{ .Values.mssql.port }}
+      targetPort: {{ .Values.mssql.port }}
+  type: {{ .Values.service.type }}
+

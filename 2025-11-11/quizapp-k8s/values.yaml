@@ -1,0 +1,23 @@
+global:
+  namespace: quizapp
+
+mssql:
+  name: quizapp-mssql
+  image: mcr.microsoft.com/mssql/server:2022-latest
+  password: "Admin@123"
+  volumePath: /var/opt/mssql
+  port: 1433
+
+backend:
+  name: tracnghiem-api
+  image: lamluongkhe/tracnghiem-api:v2
+  port: 80
+
+frontend:
+  name: tracnghiem-frontend
+  image: lamluongkhe/tracnghiem-frontend:v2
+  port: 80
+
+service:
+  type: ClusterIP
+
