@@ -1,6 +1,13 @@
 # daily-code-log
 | Ngày | File | Loại | Ghi chú |
 |------|------|------|---------|
+| 2025-11-18 | aws_VPC_Scale-Group_Permission-S3.md | 📄 Markdown | |
+| 2025-11-17 | netplan_debug_guide.md | 📄 Markdown | |
+| 2025-11-16 | aws_s3_guide.md | 📄 Markdown | |
+| 2025-11-15 | aws_iam_ebs_guide.md | 📄 Markdown | |
+| 2025-11-14 | ec2_create_instance.md | 📄 Markdown | |
+| 2025-11-13 | aws_overview.md + model.png | 📄 Markdown + 🖼️ PNG | |
+| 2025-11-12 | INSTALL_QUIZAPPQUIZAPP.md | 📄 Markdown | |
 | 2025-11-11 | Quiz App K8s + Helm | 📁 Thư mục | |
 | 2025-11-10 | Quiz App Docker | 📁 Thư mục | |
 | 2025-11-09 | Lý thuyết phỏng vấn Prometheus + Grafana (Monitoring) | 📄 PDF, Markdown | |
