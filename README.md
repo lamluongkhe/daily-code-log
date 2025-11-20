@@ -1,6 +1,8 @@
 # daily-code-log
 | Ngày | File | Loại | Ghi chú |
 |------|------|------|---------|
+| 2025-11-20 | eks_ecs_ecr_architecture.md | 📄 Markdown | |
+| 2025-11-19 | ubuntu_nvidia_resolution_guide.md (Cấu hình resolutiuon UI Ubuntu lỗi) | 📄 Markdown | |
 | 2025-11-18 | aws_VPC_Scale-Group_Permission-S3.md | 📄 Markdown | |
 | 2025-11-17 | netplan_debug_guide.md | 📄 Markdown | |
 | 2025-11-16 | aws_s3_guide.md | 📄 Markdown | |
