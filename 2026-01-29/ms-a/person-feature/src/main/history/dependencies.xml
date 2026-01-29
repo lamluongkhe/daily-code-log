@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.5.0" name="person-feature-1.0-SNAPSHOT">
+    <feature version="0.0.0">
+        <feature>aries-blueprint</feature>
+        <feature>cxf-jaxrs</feature>
+        <feature>http</feature>
+        <bundle>mvn:com.llk/person-api/1.0-SNAPSHOT</bundle>
+        <bundle>mvn:com.llk/person-impl/1.0-SNAPSHOT</bundle>
+        <bundle>mvn:com.llk/person-rest/1.0-SNAPSHOT</bundle>
+    </feature>
+</features>
