@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1769987103850
+Build-Jdk: 17.0.17
+Built-By: lnguyenc
+Bundle-Blueprint: OSGI-INF/blueprint/blueprint.xml
+Bundle-Description: simple implementation for persons
+Bundle-ManifestVersion: 2
+Bundle-Name: person-impl
+Bundle-SymbolicName: person-impl
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Service: com.llk.api.PersonService;osgi.service.blueprint.compnam
+ e=personService
+Import-Package: com.llk.api;version="[1.0,2)",org.osgi.service.blueprint
+ ;version="[1.0.0,2.0.0)",redis.clients.jedis;version="[4.4,5)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.5.0.201709291849
