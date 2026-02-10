@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
+           xmlns:cm="http://aries.apache.org/blueprint/xmlns/blueprint-cm/v1.1.0">
+
+    <cm:property-placeholder persistent-id="person-impl" update-strategy="reload">
+        <cm:default-properties>
+            <cm:property name="redis.host" value="redis"/>
+            <cm:property name="redis.port" value="6379"/>
+        </cm:default-properties>
+    </cm:property-placeholder>
+
+    <bean id="jedis" class="redis.clients.jedis.Jedis">
+        <argument value="${redis.host}"/>
+        <argument value="${redis.port}"/>
+    </bean>
+
+
+    <bean id="kafkaProducer"
+          class="com.llk.impl.kafka.PersonKafkaProducer"
+          init-method="init"
+          destroy-method="destroy"/>
+
+
+    <bean id="personService" class="com.llk.impl.PersonImpl">
+        <property name="kafkaProducer" ref="kafkaProducer"/>
+        <property name="jedis" ref="jedis"/>
+    </bean>
+
+    <service ref="personService" interface="com.llk.api.PersonService"/>
+    <service ref="kafkaProducer" interface="com.llk.api.PersonEventProducer"/>
+
+</blueprint>
