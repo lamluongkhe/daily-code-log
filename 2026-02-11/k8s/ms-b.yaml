@@ -1,0 +1,57 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ms-b
+  namespace: llkhe
+  labels:
+    app: ms-b
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ms-b
+  template:
+    metadata:
+      labels:
+        app: ms-b
+    spec:
+      containers:
+      - name: ms-b
+        image: ms-b:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8181
+        env:
+        - name: KAFKA_BOOTSTRAP_SERVERS
+          value: "kafka:29092"
+        - name: REDIS_HOST
+          value: "redis"
+        - name: REDIS_PORT
+          value: "6379"
+
+        readinessProbe:
+          tcpSocket:
+            port: 8181
+          initialDelaySeconds: 40
+          periodSeconds: 10
+
+        livenessProbe:
+          tcpSocket:
+            port: 8181
+          initialDelaySeconds: 60
+          periodSeconds: 20
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ms-b
+  namespace: llkhe
+spec:
+  selector:
+    app: ms-b
+  ports:
+  - port: 8181
+    targetPort: 8181
+    nodePort: 30182
+  type: NodePort
+
